@@ -871,7 +871,7 @@ static void JSQInstallWorkaroundForSheetPresentationIssue26295020(void) {
 
 - (void)jsq_setCollectionViewInsetsTopValue:(CGFloat)top bottomValue:(CGFloat)bottom
 {
-    UIEdgeInsetsMake(self.collectionView.contentInset.top, 0.0f, bottom, 0.0f);
+    UIEdgeInsets insets =  UIEdgeInsetsMake(self.collectionView.contentInset.top, 0.0f, bottom, 0.0f);
     self.collectionView.contentInset = insets;
     self.collectionView.scrollIndicatorInsets = insets;
 }
